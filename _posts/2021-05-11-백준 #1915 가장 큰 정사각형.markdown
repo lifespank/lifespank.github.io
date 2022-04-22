@@ -1,0 +1,77 @@
+---
+title:  "백준 #1915 가장 큰 정사각형"
+date:   2021-05-11 03:29:00 +0900
+categories: ['프로그래밍 문제']
+tags: 1915 코딩 프로그래밍 백준 dp 가장큰정사각형
+---
+[백준 #1915 가장 큰 정사각형](https://www.acmicpc.net/problem/1915)
+
+0과 1로 된 배열에서 1로 이루어진 가장 큰 정사각형의 크기를 구하는 문제.
+
+배열 `dp`에 해당 좌표를 우측 하단으로 하는 가장 큰 정사각형의 한 변의 길이를 저장한다.
+
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="451px" viewBox="-0.5 -0.5 451 441" style="max-width:100%;max-height:441px;"><defs></defs><g><rect x="220" y="0" width="220" height="220" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"></rect><rect x="0" y="0" width="220" height="220" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"></rect><rect x="0" y="220" width="220" height="220" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"></rect><rect x="220" y="220" width="220" height="220" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"></rect><path d="M 100 330 L 243.63 329.52" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 248.88 329.5 L 241.89 333.03 L 243.63 329.52 L 241.87 326.03 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path><path d="M 120 120 L 265.75 282.76" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 269.25 286.67 L 261.98 283.79 L 265.75 282.76 L 267.19 279.12 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path><path d="M 329.5 120 L 329.5 265.63" fill="none" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 329.5 270.88 L 326 263.88 L 329.5 265.63 L 333 263.88 Z" fill="rgb(0, 0, 0)" stroke="rgb(0, 0, 0)" stroke-miterlimit="10" pointer-events="all"></path><rect x="265" y="287.5" width="130" height="85" fill="none" stroke="none" pointer-events="all"></rect><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 128px; height: 1px; padding-top: 330px; margin-left: 266px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">세 좌표로 만들 수 있는 정사각형의 한 변의<br>길이의 최솟값 + 1</div></div></div></foreignObject><text x="330" y="334" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">세 좌표로 만들 수 있는 정사각형의 한 변의...</text></switch></g><rect x="210" y="350" width="240" height="70" fill="none" stroke="none" pointer-events="all"></rect><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 238px; height: 1px; padding-top: 385px; margin-left: 211px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;"><font style="font-size: 11px">dp[x][y] <br>= min(dp[x - 1][y - 1], dp[x - 1][y], dp[x][y - 1]) + 1</font></div></div></div></foreignObject><text x="330" y="389" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">dp[x][y]...</text></switch></g><rect x="290" y="90" width="80" height="20" fill="none" stroke="none" pointer-events="all"></rect><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 100px; margin-left: 291px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">dp[x - 1][y]</div></div></div></foreignObject><text x="330" y="104" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">dp[x - 1][y]</text></switch></g><rect x="30" y="320" width="80" height="20" fill="none" stroke="none" pointer-events="all"></rect><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 78px; height: 1px; padding-top: 330px; margin-left: 31px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">dp[x][y - 1]</div></div></div></foreignObject><text x="70" y="334" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">dp[x][y - 1]</text></switch></g><rect x="60" y="90" width="100" height="20" fill="none" stroke="none" pointer-events="all"></rect><g transform="translate(-0.5 -0.5)"><switch><foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 98px; height: 1px; padding-top: 100px; margin-left: 61px;"><div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">dp[x - 1][y - 1]</div></div></div></foreignObject><text x="110" y="104" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px" text-anchor="middle">dp[x - 1][y - 1]</text></switch></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"></g><a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank" rel="noopener"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Text is not SVG - cannot display</text></a></switch></svg>
+
+위, 왼쪽, 왼쪽 대각선 위의 세 좌표를 우측 하단으로 하는 가장 큰 정사각형의 한 변의 길이의 최솟값 + 1이 해당 좌표에서 가능한 가장 큰 정사각형의 한 변의 길이다.
+
+문제는 정사각형의 크기를 출력하는 것이니 배열 dp의 최댓값을 제곱하여 출력한다.
+
+```c++
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cstring>
+#include <string>
+#include <bits/stdc++.h>
+using namespace std;
+
+int board[1000][1000];
+int dp[1000][1000];
+
+int calc(int x, int y) {
+	if (dp[x][y] != -1) {
+		return dp[x][y];
+	}
+	else {
+		if (board[x][y] == 0) {
+			dp[x][y] = 0;
+		}
+		else if (x == 0 || y == 0) {
+			dp[x][y] = 1;
+		}
+		else {
+			dp[x][y] = min({ calc(x - 1, y), calc(x, y - 1), calc(x - 1, y - 1) }) + 1;
+		}
+		return dp[x][y];
+	}
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+	int n, m;
+	cin >> n >> m;
+	memset(board, 0, sizeof(int) * n * m);
+	for (int i = 0; i < n; i++) {
+		fill(dp[i], dp[i] + m, -1);
+		string line;
+		cin >> line;
+		for (int j = 0; j < m; j++) {
+			board[i][j] = (int)line[j] - '0';
+		}
+	}
+	int maxEl = 0;
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			calc(i, j);
+		}
+	}
+	for (int i = 0; i < n; i++) {
+		for (int j = 0; j < m; j++) {
+			maxEl = max(maxEl, dp[i][j]);
+		}
+	}
+	cout << maxEl * maxEl;
+	return 0;
+}
+```
