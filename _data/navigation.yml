@@ -3,3 +3,11 @@ main:
     url: /categories/
   - title: "Tag"
     url: /tags/
+
+cats:
+  - title: "프로그래밍 문제"
+    url: /categories/#프로그래밍-문제
+  - title: "프로젝트"
+    url: /categories/#프로젝트
+  - title: "여러가지"
+    url: /categories/#여러가지
