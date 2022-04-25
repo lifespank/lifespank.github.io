@@ -11,5 +11,7 @@ cats:
     url: /categories/#프로젝트
   - title: "안드로이드"
     url: /categories/#안드로이드
+  - title: "알고리즘 & 자료구조"
+    url: /categories/#알고리즘-자료구조
   - title: "여러가지"
     url: /categories/#여러가지
