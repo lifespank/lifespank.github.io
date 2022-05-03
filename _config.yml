@@ -103,3 +103,4 @@ comments:
   provider: "disqus"
   disqus:
     shortname: "sumyeongkim"
+timezone: Asia/Seoul
