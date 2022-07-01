@@ -282,7 +282,7 @@ DEPENDENCIES
   jekyll-include-cache
   jekyll-sitemap
   minima (~> 2.5)
-  tzinfo (~> 1.2)
+  tzinfo
   tzinfo-data
   wdm (~> 0.1.1)
   webrick (~> 1.7)
