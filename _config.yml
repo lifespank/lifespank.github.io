@@ -34,6 +34,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
   - jekyll-turbo
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
