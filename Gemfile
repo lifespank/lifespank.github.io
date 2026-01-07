@@ -15,7 +15,7 @@ gem 'jekyll', '~> 4.4', '>= 4.4.1'
 # gem "github-pages", "~> 225", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
+  gem 'jekyll-feed', '~> 0.17.0'
 end
 
 # Performance-booster for watching directories on Windows

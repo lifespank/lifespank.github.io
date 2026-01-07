@@ -103,7 +103,7 @@ DEPENDENCIES
   fiddle
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.4, >= 4.4.1)
-  jekyll-feed (~> 0.12)
+  jekyll-feed (~> 0.17.0)
   jekyll-include-cache
   jekyll-remote-theme (~> 0.4.3)
   jekyll-sitemap
