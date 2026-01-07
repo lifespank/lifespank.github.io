@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.sumyeong.kim/sitemap.xml
+#DaumWebMasterTool:35440a6b5ff5f803ec1ee95f2df8956dbdf6108bf81f18bb3f1787a485ee4463:7C0jj6iED7NsVjMXlLDRJA==
