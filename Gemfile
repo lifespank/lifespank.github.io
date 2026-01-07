@@ -19,7 +19,7 @@ group :jekyll_plugins do
 end
 
 # Performance-booster for watching directories on Windows
- gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+ gem 'wdm', '>= 0.1.0', :platforms => [:windows]
 
 # Lock `http_parser.rb` gem to `v0.6.x` on JRuby builds since newer versions of the gem
 # do not have a Java counterpart.
