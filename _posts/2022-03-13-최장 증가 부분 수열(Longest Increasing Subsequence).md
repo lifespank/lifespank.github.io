@@ -1,7 +1,7 @@
 ---
 title: "최장 증가 부분 수열(Longest Increasing Subsequence)"
 date: 2022-03-13 10:59:00 +0900
-categories: ['알고리즘 & 자료구조']
+categories: ['알고리즘 및 자료구조']
 tags: 최장증가부분수열 LIS 알고리즘
 ---
 ## 개념

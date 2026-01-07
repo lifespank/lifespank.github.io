@@ -1,7 +1,7 @@
 ---
 title: "희소 테이블(Sparse Table)"
 date: 2022-03-16 04:44:00 +0900
-categories: ['알고리즘 & 자료구조']
+categories: ['알고리즘 및 자료구조']
 tags: 희소테이블 자료구조
 ---
 ## 설명
