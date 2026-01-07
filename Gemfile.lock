@@ -57,8 +57,6 @@ GEM
       sass-embedded (~> 1.54)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-turbo (0.1.0)
-      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.2.1)
       listen (~> 3.0)
     json (2.18.0)
@@ -109,7 +107,6 @@ DEPENDENCIES
   jekyll-include-cache
   jekyll-remote-theme (~> 0.4.3)
   jekyll-sitemap
-  jekyll-turbo
   logger
   tzinfo
   tzinfo-data
@@ -139,7 +136,6 @@ CHECKSUMS
   jekyll-remote-theme (0.4.3) sha256=d3fde726484fb3df04de9e347baf75aaa3d5bfea771a330412e0c52608e54b40
   jekyll-sass-converter (3.0.0) sha256=e2e7674f186e906b9d99b8066e13f9b4d5cb9f806d36f7bc8cf2610053d8c902
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
-  jekyll-turbo (0.1.0) sha256=fb4b83ffd6bc33efb46832dbd2be6286973a957df9cf393b38efe368767db161
   jekyll-watch (2.2.1) sha256=bc44ed43f5e0a552836245a54dbff3ea7421ecc2856707e8a1ee203a8387a7e1
   json (2.18.0) sha256=b10506aee4183f5cf49e0efc48073d7b75843ce3782c68dbeb763351c08fd505
   kramdown (2.5.1) sha256=87bbb6abd9d3cebe4fc1f33e367c392b4500e6f8fa19dd61c0972cf4afe7368c

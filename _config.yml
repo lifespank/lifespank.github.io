@@ -33,7 +33,6 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-sitemap
-  - jekyll-turbo
   - jekyll-remote-theme
 
 # Exclude from processing.

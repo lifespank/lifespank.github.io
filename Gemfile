@@ -32,7 +32,6 @@ gem 'jekyll-sitemap'
 gem 'tzinfo'
 gem "tzinfo-data", platforms: [:windows]
 
-gem 'jekyll-turbo'
 gem 'jekyll-remote-theme', '~> 0.4.3'
 gem 'fiddle'
 gem 'logger'
