@@ -25,13 +25,13 @@ end
 # do not have a Java counterpart.
 gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
-gem "webrick", "~> 1.7"
+gem "webrick"
 gem "jekyll-include-cache", group: :jekyll_plugins
 gem 'jekyll-sitemap'
 
 gem 'tzinfo'
-gem "tzinfo-data", platforms: [:windows]
+gem 'tzinfo-data'
 
-gem 'jekyll-remote-theme', '~> 0.4.3'
+gem 'jekyll-remote-theme'
 gem 'fiddle'
 gem 'logger'
