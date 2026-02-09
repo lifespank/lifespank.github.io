@@ -8,13 +8,13 @@ tags: 라즈베리파이 우한폐렴 코로나
 
 IBM World Community Grid는 컴퓨터 또는 스마트 기기를 가진 누구나 본인의 남는 컴퓨팅 파워로 환경과 기아 문제를 해결하는 최신 연구의 데이터를 처리해 지원하는 프로젝트다. 이것에 참여하는 법을 소개해본다.
 
-![picture 2](https://i.imgur.com/8fmzuOP.png)  
+![picture 2]({{ "/images/imgur/8fmzuOP.png" | relative_url }})  
 
-![picture 3](https://i.imgur.com/jk1LCok.png)  
+![picture 3]({{ "/images/imgur/jk1LCok.png" | relative_url }})  
 
 먼저 회원가입을 하고 프로젝트를 선택한다. COVID-19, 결핵, 암 등등 여러 프로젝트가 있다.
 
-![picture 4](https://i.imgur.com/Nxv9PzX.png)  
+![picture 4]({{ "/images/imgur/Nxv9PzX.png" | relative_url }})  
 
 본인의 운영체제에 맞춰 클라이언트를 설치한다. 나는 라즈베리파이 4에 우분투를 갖고 있으니 우분투용을 받는다.
 
@@ -68,11 +68,11 @@ meaning see: https://boinc.berkeley.edu/wiki/client_configuration
 </cc_config>
 ```
 
-![picture 5](https://i.imgur.com/Q24mckm.png)  
+![picture 5]({{ "/images/imgur/Q24mckm.png" | relative_url }})  
 
 Add Project에서 World Community Grid를 선택하고 아까 가입했던 이메일과 비밀번호를 입력하면 태스크가 할당된다.
 
-![picture 6](https://i.imgur.com/ryB12Yc.png)
+![picture 6]({{ "/images/imgur/ryB12Yc.png" | relative_url }})
 
 COVID-19 관련 태스크가 실행되고 있다.
 
