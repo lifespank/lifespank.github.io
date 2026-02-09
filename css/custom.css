@@ -3,13 +3,6 @@
   sidebar/nav/etc. Instead, shrink only the main page content.
 */
 
-.page__content {
-    /* Mobile: slightly larger for readability */
-    font-size: 0.8125rem;
-    /* ~13px if base is 16px */
-    line-height: 1.65;
-}
-
 /* Tablet/desktop: keep your preferred smaller size */
 @media (min-width: 48em) {
     .page__content {
