@@ -4,7 +4,7 @@
 */
 
 /* Tablet/desktop: keep your preferred smaller size */
-@media (min-width:64em) {
+@media (min-width:1024px) {
     .page__content {
         font-size: 0.75rem;
         /* ~12px */
