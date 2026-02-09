@@ -1,12 +1,14 @@
-html {
-    font-size: 14px;
+/*
+  Minimal Mistakes: avoid changing `html { font-size }` because it affects
+  sidebar/nav/etc. Instead, shrink only the main page content.
+*/
+
+.page__content {
+    font-size: 0.75rem;
+    /* ~12px if base is 16px */
+    line-height: 1.65;
 }
 
-@media (min-width: 64em) {
-    html {
-        font-size: 15px;
-    }
-}
 
 figcaption,
 .caption {
