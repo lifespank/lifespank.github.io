@@ -32,6 +32,7 @@ gem 'jekyll-sitemap'
 gem 'tzinfo'
 gem 'tzinfo-data'
 
-gem 'jekyll-remote-theme'
 gem 'fiddle'
 gem 'logger'
+
+gem 'minimal-mistakes-jekyll'
