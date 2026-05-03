@@ -47,7 +47,7 @@ Adding a new category just creates a new `/categories/<new>/` page automatically
 ### Cross-linking, images, and admonitions
 
 - Link to other posts with Liquid: `{% post_url 2026-02-16-예물 시계 구매하기 %}` (filename without extension, exact spaces preserved).
-- Images go in `/images/` at repo root and are referenced via `{{ "/images/foo.png" | relative_url }}` — do not hardcode the site URL.
+- Images go in `/assets/img/` (Chirpy convention) and are referenced via `{{ "/assets/img/foo.png" | relative_url }}` — do not hardcode the site URL.
 - Note callouts use GitHub-flavored admonitions (Chirpy renders them natively as styled blocks):
   ```markdown
   > [!NOTE]
