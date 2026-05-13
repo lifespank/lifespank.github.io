@@ -103,7 +103,7 @@ sass:
 compress_html:
   clippings: all
   comments: all
-  endings: all
+  endings: [html, body, li, dt, dd, optgroup, option, colgroup, caption, thead, tbody, tfoot, tr, td, th]
   profile: false
   blanklines: false
   ignore:
